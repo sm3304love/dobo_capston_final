@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="doro_table_mobile">
+  <link
+    name="shelf">
+    <inertial>
+      <origin
+        xyz="-0.077781 -0.069608 0.40675"
+        rpy="0 0 0" />
+      <mass
+        value="14.947" />
+      <inertia
+        ixx="0.34755"
+        ixy="0"
+        ixz="0"
+        iyy="0.57999"
+        iyz="0"
+        izz="0.47194" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://doro_table_mobile/meshes/shelf.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://doro_table_mobile/meshes/shelf.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="wheel2">
+    <inertial>
+      <origin
+        xyz="0.009622 0.022684 -4.9293E-06"
+        rpy="0 0 0" />
+      <mass
+        value="0.24397" />
+      <inertia
+        ixx="0.00018327"
+        ixy="0"
+        ixz="0"
+        iyy="0.00015112"
+        iyz="0"
+        izz="0.00018559" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://doro_table_mobile/meshes/wheel2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://doro_table_mobile/meshes/wheel2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="wheel2_joint"
+    type="continuous">
+    <origin
+      xyz="0.3835 0.2535 -0.065"
+      rpy="1.5708 0 3.1416" />
+    <parent
+      link="shelf" />
+    <child
+      link="wheel2" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="wheel3">
+    <inertial>
+      <origin
+        xyz="0.009622 0.022684 -4.9293E-06"
+        rpy="0 0 0" />
+      <mass
+        value="0.24397" />
+      <inertia
+        ixx="0.00018327"
+        ixy="0"
+        ixz="0"
+        iyy="0.00015112"
+        iyz="0"
+        izz="0.00018559" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://doro_table_mobile/meshes/wheel3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://doro_table_mobile/meshes/wheel3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="wheel3_joint"
+    type="continuous">
+    <origin
+      xyz="-0.3835 -0.3935 -0.065"
+      rpy="1.5708 0 3.1416" />
+    <parent
+      link="shelf" />
+    <child
+      link="wheel3" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="wheel4">
+    <inertial>
+      <origin
+        xyz="0.009622 0.022684 -4.9293E-06"
+        rpy="0 0 0" />
+      <mass
+        value="0.24397" />
+      <inertia
+        ixx="0.00018327"
+        ixy="0"
+        ixz="0"
+        iyy="0.00015112"
+        iyz="0"
+        izz="0.00018559" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://doro_table_mobile/meshes/wheel4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://doro_table_mobile/meshes/wheel4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="wheel4_joint"
+    type="continuous">
+    <origin
+      xyz="-0.3835 0.2535 -0.065"
+      rpy="1.5708 0 3.1416" />
+    <parent
+      link="shelf" />
+    <child
+      link="wheel4" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="wheel1">
+    <inertial>
+      <origin
+        xyz="0.009622 0.022684 -4.9293E-06"
+        rpy="0 0 0" />
+      <mass
+        value="0.24397" />
+      <inertia
+        ixx="0.00018327"
+        ixy="0"
+        ixz="0"
+        iyy="0.00015112"
+        iyz="0"
+        izz="0.00018559" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://doro_table_mobile/meshes/wheel1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://doro_table_mobile/meshes/wheel1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="wheel1_joint"
+    type="continuous">
+    <origin
+      xyz="0.3835 -0.3935 -0.065"
+      rpy="1.5708 0 3.1416" />
+    <parent
+      link="shelf" />
+    <child
+      link="wheel1" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+</robot>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="test_gipper">
+  <link
+    name="gripper">
+    <inertial>
+      <origin
+        xyz="6.2225E-07 3.3307E-16 0.0045"
+        rpy="0 0 0" />
+      <mass
+        value="1.6154" />
+      <inertia
+        ixx="0.011286"
+        ixy="0"
+        ixz="0"
+        iyy="0.044568"
+        iyz="0"
+        izz="0.055851" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test_gipper/meshes/gripper.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test_gipper/meshes/gripper.STL" />
+      </geometry>
+    </collision>
+  </link>
+</robot>

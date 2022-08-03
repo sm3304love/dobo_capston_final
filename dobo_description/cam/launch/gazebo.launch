@@ -1,0 +1,26 @@
+<launch>
+  <include
+    file="$(find gazebo_ros)/launch/empty_world.launch" />
+
+  <node
+    name="spawn_model"
+    pkg="gazebo_ros"
+    type="spawn_model"
+    args="-file $(find cam)/cam.urdf -urdf -model cam"
+    output="screen" />
+
+  <param name="robot_description2" textfile="/home/sm/ws_moveit/src/dobo_description/table_lazercutter/urdf/table_lazercutter.urdf" />
+   <node
+    name="spawn_model1"
+    pkg="gazebo_ros"
+    type="spawn_model"
+    args="-x 0 -y 0 -z 0 -file $(find table_lazercutter2)/urdf/table_lazercutter2.urdf -urdf -model table_lazercutter2"
+    output="screen" />
+
+
+  <!-- <node
+    name="fake_joint_calibration"
+    pkg="rostopic"
+    type="rostopic"
+    args="pub /calibrated std_msgs/Bool true" /> -->
+</launch>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="DORO_table">
+  <link name="world" />
+  <joint name="world_joint" type="fixed">
+    <parent link="world"/>
+    <child link="shelf"/>
+  </joint>
+
+  <link
+    name="shelf">
+    <inertial>
+      <origin
+        xyz="0 0 0.3"
+        rpy="0 0 0" />
+      <mass
+        value="15.9226602269834" />
+      <inertia
+        ixx="0.348279163425934"
+        ixy="9.78249699407874E-06"
+        ixz="-4.81788976036679E-08"
+        iyy="0.472546975415564"
+        iyz="9.53977303601999E-08"
+        izz="0.580731685277469" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0.3"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://DORO_table/meshes/shelf.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0.3"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://DORO_table/meshes/shelf.STL" />
+      </geometry>
+    </collision>
+  </link>
+</robot>
